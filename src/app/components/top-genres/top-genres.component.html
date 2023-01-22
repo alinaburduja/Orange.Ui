@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th>Genre id</th>
+        <th>Movies</th>
+    </tr>
+    <tr *ngFor="let entry of entries">
+        <td>{{entry[0]}}</td>
+        <td>{{getMovieNames(entry[1])}}</td>
+    </tr>
+</table>

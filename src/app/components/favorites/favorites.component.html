@@ -1,0 +1,11 @@
+<br/><br/><br/>
+<table>
+    <tr>
+        <th>Movie Title</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let favorite of favorites">
+        <td>{{favorite.movie.originalTitle}}</td>
+        <td><button (click)="onClickRemove(favorite.movie.id)">Remove</button></td>
+    </tr>
+</table>
